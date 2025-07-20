@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-family-base);
+}
+
+body {
+  font-family: var(--font-family-base);
+}
+
+.swiper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-slide {
+  position: relative;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: var(--color-background);
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-scrollbar {
+  background-color: var(--color-secondary) !important;
+  width: 6px !important;
+}
+
+.swiper-scrollbar-drag {
+  background-color: var(--color-primary) !important;
+}
+
+/* GLOBAL */
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+/* button {
+  background: var(--color-primary);
+  color: var(--color-background);
+
+  &:hover {
+    background: var(--color-accent);
+  }
+} */

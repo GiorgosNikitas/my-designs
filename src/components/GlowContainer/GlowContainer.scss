@@ -1,0 +1,52 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.glow-container {
+  position: relative;
+  width: 60%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-text);
+  padding: 2vh 2vw;
+
+  border-radius: var(--border-radius);
+  // border: 2px solid var(--color-primary);
+  background-color: var(--color-secondary);
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -0.3rem;
+    z-index: -1;
+    background: conic-gradient(
+      from var(--gradient-angle),
+      var(--color-primary),
+      var(--color-secondary),
+      var(--color-accent),
+      var(--color-secondary),
+      var(--color-primary)
+    );
+    border-radius: inherit;
+    animation: rotation 10s linear infinite;
+  }
+
+  &::after {
+    filter: blur(3rem);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}

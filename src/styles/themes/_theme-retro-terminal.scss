@@ -1,0 +1,14 @@
+:root[data-theme="retro-terminal"] {
+  --color-background: #1e1e1e;        // Classic terminal black
+  --color-surface: #2d2d2d;           // Slightly raised gray panel
+  --color-primary: #00ff00;           // Matrix green
+  --color-secondary: #ff00ff;         // Magenta
+  --color-accent: #00ffff;            // Cyan
+  --color-danger: #ff3c38;            // Neon red
+  --color-text: #e0e0e0;              // Light gray text
+  --color-text-muted: #888888;        // Dimmed gray
+
+  --border-radius: 4px;
+
+  --font-family-base: 'VT323', monospace;
+}

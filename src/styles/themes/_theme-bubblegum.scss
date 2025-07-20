@@ -1,0 +1,14 @@
+:root[data-theme="bubblegum"] {
+  --color-background: #ffe3f1;        // Soft pink background
+  --color-surface: #ffffff;           // Clean white surfaces
+  --color-primary: #ff69b4;           // Hot pink (CTAs, emphasis)
+  --color-secondary: #ffd700;         // Bright yellow (accents)
+  --color-accent: #87cefa;            // Sky blue (hover, highlights)
+  --color-danger: #ff6f61;            // Coral red (errors)
+  --color-text: #222222;              // Rich black for text
+  --color-text-muted: #888888;        // Soft gray for labels/hints
+
+  --border-radius: 16px;
+
+  --font-family-base: "Comic Neue", cursive;
+}

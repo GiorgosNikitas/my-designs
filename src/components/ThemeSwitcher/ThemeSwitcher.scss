@@ -1,0 +1,83 @@
+.theme-switcher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+}
+
+.theme-swiper {
+  width: 40vw;
+  height: 10vh;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    transition: 0.1s linear;
+    padding: 0 2vw;
+    &:hover {
+      color: var(--color-secondary);
+      transition: 0.1s linear;
+    }
+  }
+
+  .swiper-button-next:hover {
+    transform: translateX(20%);
+  }
+
+  .swiper-button-prev:hover {
+    transform: translateX(-20%);
+  }
+}
+
+.theme-preview {
+  height: 10vh;
+  border-radius: var(--border-radius);
+  display: flex;
+  border: 1px solid var(--color-text-muted);
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.theme-color {
+  flex: 1;
+  margin: 0;
+  width: 5vw;
+  // box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+
+  &:not(:last-child) {
+    border-right: 1px solid var(--color-text-muted);
+  }
+
+  @for $i from 1 through 8 {
+    &:nth-child(#{$i}) {
+      @if $i == 1 {
+        background-color: var(--color-background);
+        // border-radius: var(--border-radius) 0 0 var(--border-radius);
+      } @else if $i == 2 {
+        background-color: var(--color-surface);
+      } @else if $i == 3 {
+        background-color: var(--color-primary);
+      } @else if $i == 4 {
+        background-color: var(--color-secondary);
+      } @else if $i == 5 {
+        background-color: var(--color-accent);
+      } @else if $i == 6 {
+        background-color: var(--color-danger);
+      } @else if $i == 7 {
+        background-color: var(--color-text);
+      } @else if $i == 8 {
+        background-color: var(--color-text-muted);
+        // border-radius: 0 var(--border-radius) var(--border-radius) 0;
+      }
+    }
+  }
+}

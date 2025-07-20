@@ -1,0 +1,6 @@
+body {
+  font-family: $font-base;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: background-color $transition-speed, color $transition-speed;
+}

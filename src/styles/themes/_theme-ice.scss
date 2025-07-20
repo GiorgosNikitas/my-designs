@@ -1,0 +1,13 @@
+:root[data-theme="ice"] {
+  --color-background: #e6f7f9;        /* frosty sky blue */
+  --color-surface: #ffffff;           /* clean white for surfaces */
+  --color-primary: #66bcd4;           /* glacier blue */
+  --color-secondary: #a8d8e6;         /* soft icy teal */
+  --color-accent: #00cfff;          /* lightest cyan for glow/highlights */
+  --color-danger: #ff6b6b;            /* icy red for alerts */
+  --color-text: #1a2b33;              /* dark blue-gray for contrast */
+  --color-text-muted: #4d6a75;        /* steel blue for muted text */
+
+  --border-radius: 6px;               /* smoother feel */
+  --font-family-base: 'Quicksand', sans-serif;
+}
