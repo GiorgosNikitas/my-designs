@@ -15,6 +15,7 @@ import { GlowContainer } from './components/GlowContainer/GlowContainer'
 import { SlideContent } from './components/MySwiperSlide/SlideContent'
 import DraggableLight from './components/DraggableLight/DraggableLight'
 import { DarkModeToggle } from './components/DarkModeToggle/DarkModeToggle'
+import { InfoOverlay } from './components/InfoOverlay/InfoOverlay'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -56,6 +57,17 @@ function App() {
 
       <SwiperSlide>
         <SlideContent title="Dark Mode Toggle" children={<DarkModeToggle />} />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <SlideContent
+          title='Info Overlay'
+          children={
+            <InfoOverlay
+              text='This is a text sample'
+              infoText='This is a desctription that explains the sample text' />
+          }
+        />
       </SwiperSlide>
     </Swiper>
   )

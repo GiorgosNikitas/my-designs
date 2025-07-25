@@ -10,7 +10,6 @@
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  touch-action: manipulation;
   padding: 1em 1.5em;
   background: var(--color-primary);
   border-radius: var(--border-radius);
@@ -30,7 +29,7 @@
     bottom: 0;
     background: var(--color-primary);
     border-radius: inherit;
-    box-shadow: 0 0 0 2px var(--color-secondary), 0 0.625em 0 0 var(--color-accent);
+    box-shadow: 0 0 0 2px black, 0 0.625em 0 0 var(--color-accent);
     transform: translate3d(0, 0.75em, -1em);
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
       box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
@@ -43,7 +42,7 @@
   }
 
   &:hover::before {
-    box-shadow: 0 0 0 2px var(--color-secondary), 0 0.5em 0 0 var(--color-accent);
+    box-shadow: 0 0 0 2px black, 0 0.5em 0 0 var(--color-accent);
     transform: translate3d(0, 0.5em, -1em);
   }
   &:active {
